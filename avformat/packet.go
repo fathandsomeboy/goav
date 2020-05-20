@@ -10,7 +10,7 @@ import "C"
 import (
 	"unsafe"
 
-	"github.com/giorgisio/goav/avcodec"
+	"github.com/fathandsomeboy/goav/avcodec"
 )
 
 func toCPacket(pkt *avcodec.Packet) *C.struct_AVPacket {

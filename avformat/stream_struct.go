@@ -10,8 +10,8 @@ import "C"
 import (
 	"unsafe"
 
-	"github.com/giorgisio/goav/avcodec"
-	"github.com/giorgisio/goav/avutil"
+	"github.com/fathandsomeboy/goav/avcodec"
+	"github.com/fathandsomeboy/goav/avutil"
 )
 
 func (avs *Stream) CodecParameters() *avcodec.AvCodecParameters {

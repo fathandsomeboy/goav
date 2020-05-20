@@ -7,7 +7,7 @@ package avformat
 //#cgo LDFLAGS: -L../../ffmpeg/lib/ -llibavformat  -llibavcodec -llibavutil -llibavdevice -llibavfilter -llibswresample -llibswscale
 //#include <libavutil/avutil.h>
 import "C"
-import "github.com/giorgisio/goav/avcodec"
+import "github.com/fathandsomeboy/goav/avcodec"
 
 func newRational(r C.struct_AVRational) avcodec.Rational {
 	return avcodec.NewRational(int(r.num), int(r.den))

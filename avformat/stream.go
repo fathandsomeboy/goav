@@ -8,7 +8,7 @@ package avformat
 //#include <libavformat/avformat.h>
 import "C"
 import (
-	"github.com/giorgisio/goav/avcodec"
+	"github.com/fathandsomeboy/goav/avcodec"
 )
 
 //Rational av_stream_get_r_frame_rate (const Stream *s)
