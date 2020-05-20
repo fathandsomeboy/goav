@@ -3,7 +3,8 @@
 
 package avcodec
 
-//#cgo pkg-config: libavcodec
+//#cgo CFLAGS: -I../../ffmpeg/include
+//#cgo LDFLAGS: -L../../ffmpeg/lib/ -llibavformat  -llibavcodec -llibavutil -llibavdevice -llibavfilter -llibswresample -llibswscale
 //#include <libavcodec/avcodec.h>
 import "C"
 

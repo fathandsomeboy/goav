@@ -7,7 +7,8 @@
 // Some generic features and utilities provided by the libavutil library
 package avutil
 
-//#cgo pkg-config: libavutil
+//#cgo CFLAGS: -I../../ffmpeg/include
+//#cgo LDFLAGS: -L../../ffmpeg/lib/ -llibavformat  -llibavcodec -llibavutil -llibavdevice -llibavfilter -llibswresample -llibswscale
 //#include <libavutil/error.h>
 //#include <stdlib.h>
 //static const char *error2string(int code) { return av_err2str(code); }

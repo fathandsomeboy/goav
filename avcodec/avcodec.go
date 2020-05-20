@@ -5,7 +5,9 @@
 //Provides some generic global options, which can be set on all the encoders and decoders.
 package avcodec
 
-//#cgo pkg-config: libavformat libavcodec libavutil libswresample
+
+//#cgo CFLAGS: -I../../ffmpeg/include
+//#cgo LDFLAGS: -L../../ffmpeg/lib/ -llibavformat  -llibavcodec -llibavutil -llibavdevice -llibavfilter -llibswresample -llibswscale
 //#include <stdio.h>
 //#include <stdlib.h>
 //#include <inttypes.h>

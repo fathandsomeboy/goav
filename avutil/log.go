@@ -4,7 +4,8 @@
 package avutil
 
 /*
-	#cgo pkg-config: libavutil
+	#cgo CFLAGS: -I../../ffmpeg/include
+#cgo LDFLAGS: -L../../ffmpeg/lib/ -llibavformat  -llibavcodec -llibavutil -llibavdevice -llibavfilter -llibswresample -llibswscale
 	#include <libavutil/log.h>
 	#include <stdlib.h>
 */

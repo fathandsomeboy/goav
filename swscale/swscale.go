@@ -6,7 +6,8 @@
 //Pixel format conversion: is the process of converting the image format and colorspace of the image.
 package swscale
 
-//#cgo pkg-config: libswscale libavutil
+//#cgo CFLAGS: -I../../ffmpeg/include
+//#cgo LDFLAGS: -L../../ffmpeg/lib/ -llibavformat  -llibavcodec -llibavutil -llibavdevice -llibavfilter -llibswresample -llibswscale
 //#include <stdio.h>
 //#include <stdlib.h>
 //#include <inttypes.h>

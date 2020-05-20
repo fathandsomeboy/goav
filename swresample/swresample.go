@@ -6,7 +6,8 @@
 package swresample
 
 /*
-	#cgo pkg-config: libswresample
+#cgo CFLAGS: -I../../ffmpeg/include
+#cgo LDFLAGS: -L../../ffmpeg/lib/ -llibavformat  -llibavcodec -llibavutil -llibavdevice -llibavfilter -llibswresample -llibswscale
 	#include <libswresample/swresample.h>
 */
 import "C"
