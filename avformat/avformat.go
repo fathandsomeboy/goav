@@ -6,8 +6,8 @@
 //Supported formats (muxers and demuxers) provided by the libavformat library
 package avformat
 
-//#cgo CFLAGS: -I../../ffmpeg/include
-//#cgo LDFLAGS: -L../../ffmpeg/lib/ -llibavformat  -llibavcodec -llibavutil -llibavdevice -llibavfilter -llibswresample -llibswscale
+//#cgo CFLAGS: -I../ffmpeg/include
+//#cgo LDFLAGS: -L../ffmpeg/lib/ -llibavformat  -llibavcodec -llibavutil -llibavdevice -llibavfilter -llibswresample -llibswscale
 //#include <stdio.h>
 //#include <stdlib.h>
 //#include <inttypes.h>
